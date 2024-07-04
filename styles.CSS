@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    position: fixed;
+    width: calc(100% - 200px);
+    top: 0;
+    left: 200px;
+    z-index: 1000;
+}
+
+nav#top-menu {
+    background-color: #444;
+    overflow-x: auto;
+    white-space: nowrap;
+    position: fixed;
+    width: calc(100% - 200px);
+    top: 50px;
+    left: 200px;
+    z-index: 999;
+    padding: 0;
+}
+
+nav#top-menu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav#top-menu a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.container {
+    display: flex;
+    margin-top: 60px;
+    flex: 1;
+}
+
+nav#side-menu {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    height: calc(100vh - 50px);
+    position: fixed;
+    top: 50px;
+    left: 0;
+    z-index: 998;
+    overflow-y: auto;
+}
+
+#side-menu-image {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#side-menu-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav#side-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav#side-menu ul li {
+    margin-bottom: 10px;
+}
+
+nav#side-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px 16px;
+    background-color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav#side-menu ul li a:hover {
+    background-color: #ddd;
+}
+
+#contenido {
+    margin-left: 200px; 
+    padding: 20px;
+    margin-top: 60px;
+    flex: 1;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: calc(100% - 200px);
+    left: 200px;
+    z-index: 997;
+    margin-top: auto;
+}
